@@ -15,3 +15,27 @@ Life Event Advisor: Retains conversational context. Inject life events dynamical
 
 System Architecture & Innovation:
 The true innovation of the INNO Wealth Terminal is the separation of Deterministic Math and Generative Reasoning. We use a Python engine for the heavy lifting of compounding math, and Google Gemini for strategic reasoning.
+Technology Stack
+Frontend/UI: Streamlit with custom CSS (Dark-mode Bloomberg-style terminal).
+
+Data Visualization: Plotly Graph Objects (Interactive, no-reload rendering).
+
+Mathematical Engine: NumPy & Pandas (Handles 30-year compounding arrays instantly).
+
+LLM Integration: Google Gemini 2.5 Flash via REST API (Chosen for massive context window, near-zero latency, and superior reasoning).
+
+What Makes It Unique?:
+Macro-Economic Stress Testing: Simulates 30-year trajectories under Severe Bear (-5%) or Bull (+15%) markets using a live slider.
+
+Stateful Conversational Memory: Users can challenge the math, ask "Why?", or pivot their strategy without losing context.
+
+Strict Persona Engineering: Gemini is heavily prompted to act as an elite Indian quant analyst, delivering structured, localized blueprints (SIPs, FDs, tax brackets) instead of generic advice.
+
+Business Impact:
+To validate the model while maintaining privacy compliance, we engineered a Python-based Monte Carlo Economic Simulation Model using Log-Normal distributions to create a synthetic dataset of 50 Indian middle-class professionals.
+
+The Impact Analytics (via Power BI):
+
+Identified Leakage: Discovered ₹2.22 Million in immediate, actionable tax savings simply by autonomously routing users to their mathematically optimal tax regime.
+
+Market Scale: Can serve as a foundational advisory layer for neo-banks or brokerages (Zerodha, Groww), delivering hyper-personalized financial literacy at zero marginal cost.
