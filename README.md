@@ -13,5 +13,5 @@ Tax Wizard: Mathematically compares the Indian Old vs. New Tax Regimes based on 
 
 Life Event Advisor: Retains conversational context. Inject life events dynamically (e.g., "I just got married and got a ₹5L bonus"), and the AI instantly recalculates the overarching strategy.
 
-System Architecture & Innovation
+System Architecture & Innovation:
 The true innovation of the INNO Wealth Terminal is the separation of Deterministic Math and Generative Reasoning. We use a Python engine for the heavy lifting of compounding math, and Google Gemini for strategic reasoning.
