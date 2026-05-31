@@ -40,8 +40,8 @@ return_rates = {"Severe Bear (-5%)": -0.05, "Stagnant (4%)": 0.04, "Average (10%
 roi = return_rates[market_condition]
 
 st.sidebar.divider()
-st.sidebar.success("🟢 Systems Nominal")
-st.sidebar.info("🧠 Brain: INNO Core Quant")
+st.sidebar.success("Systems Nominal")
+st.sidebar.info("Brain: INNO Core Quant")
 
 # --- 3. QUANTITATIVE DASHBOARD ---
 st.title("Algorithmic Wealth Strategist")
