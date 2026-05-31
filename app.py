@@ -23,7 +23,7 @@ st.html("""
 """)
 
 # --- 2. SIDEBAR: SECURE VAULT & SIMULATOR ---
-st.sidebar.markdown("### 🏦 INNO Wealth Terminal")
+st.sidebar.markdown("### INNO Wealth Terminal")
 st.sidebar.caption("Secure Client Data Sync")
 st.sidebar.divider()
 
@@ -68,7 +68,7 @@ st.plotly_chart(fig, use_container_width=True)
 st.divider()
 
 # --- 4. CONTINUOUS DEEP-DIVE CHAT ---
-st.markdown("### 💬 Strategic AI Consultation")
+st.markdown("### Strategic AI Consultation")
 st.caption("Type 'Analyze my profile' to get a deep-dive, or ask specific follow-up questions.")
 
 if "messages" not in st.session_state:
