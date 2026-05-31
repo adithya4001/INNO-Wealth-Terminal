@@ -4,7 +4,6 @@ In India, elite quantitative financial advisory is historically restricted to Hi
 
 INNO Wealth Terminal solves this by democratizing quantitative wealth management. We engineered a hybrid system combining a deterministic macro-economic modelling engine with a continuous, stateful Generative AI cognitive interface. It is not a static form or a generic chatbot—it is a dynamic, memory-retaining financial strategist that recalculates 30-year FIRE trajectories, optimizes taxes, and adapts to life events in real-time.
 
-Key Features (Hackathon Objectives Achieved)
 FIRE Path Planner: Calculates a 30-year Monte Carlo trajectory comparing standard cash hoarding against AI-optimized SIP routing, visualized via interactive Plotly dashboards.
 
 Money Health Score: Executes an instant "Financial Health Check," calculating savings rates, emergency fund deficits, and portfolio health based on live inputs.
@@ -15,7 +14,10 @@ Life Event Advisor: Retains conversational context. Inject life events dynamical
 
 System Architecture & Innovation:
 The true innovation of the INNO Wealth Terminal is the separation of Deterministic Math and Generative Reasoning. We use a Python engine for the heavy lifting of compounding math, and Google Gemini for strategic reasoning.
-Technology Stack
+
+
+Technology Stack Used:
+
 Frontend/UI: Streamlit with custom CSS (Dark-mode Bloomberg-style terminal).
 
 Data Visualization: Plotly Graph Objects (Interactive, no-reload rendering).
