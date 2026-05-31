@@ -1,5 +1,5 @@
 # INNO-Wealth-Terminal
-Executive Summary
+
 In India, elite quantitative financial advisory is historically restricted to High-Net-Worth Individuals (HNIs). The average young professional leaks lakhs of rupees annually to inefficient tax regimes, inflation, and poor asset allocation due to a lack of affordable, continuous financial guidance.
 
 INNO Wealth Terminal solves this by democratizing quantitative wealth management. We engineered a hybrid system combining a deterministic macro-economic modelling engine with a continuous, stateful Generative AI cognitive interface. It is not a static form or a generic chatbot—it is a dynamic, memory-retaining financial strategist that recalculates 30-year FIRE trajectories, optimizes taxes, and adapts to life events in real-time.
