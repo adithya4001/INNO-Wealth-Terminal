@@ -6,7 +6,8 @@ import numpy as np
 API_KEY = st.secrets["GEMINI_API_KEY"]
 URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={API_KEY}"
 
-# --- 1. ENTERPRISE UI CONFIG ---
+
+#STEP 1 : SETUP 
 st.set_page_config(page_title="INNO Wealth Terminal", page_icon="🏦", layout="wide")
 
 st.html("""
@@ -22,7 +23,7 @@ st.html("""
     </style>
 """)
 
-# --- 2. SIDEBAR: SECURE VAULT & SIMULATOR ---
+# STEP 2 SETTING UP THE PARAMETERS
 st.sidebar.markdown("### INNO Wealth Terminal")
 st.sidebar.caption("Secure Client Data Sync")
 st.sidebar.divider()
@@ -43,7 +44,7 @@ st.sidebar.divider()
 st.sidebar.success("Systems Nominal")
 st.sidebar.info("Brain: INNO Core Quant")
 
-# --- 3. QUANTITATIVE DASHBOARD ---
+# STEP 3 DASHBOARD ANALYSIS
 st.title("Algorithmic Wealth Strategist")
 
 yearly_savings = income - (expenses * 12)
@@ -67,7 +68,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
 
-# --- 4. CONTINUOUS DEEP-DIVE CHAT ---
+# STEP 4 CHATBOT FEATURE
 st.markdown("### Strategic AI Consultation")
 st.caption("Type 'Analyze my profile' to get a deep-dive, or ask specific follow-up questions.")
 
@@ -75,7 +76,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
     st.session_state.messages.append({
         "role": "model", 
-        # CHANGED: Much better welcoming message that prompts the user properly.
+        
         "content": "Welcome to the INNO Wealth Terminal. I have securely synced your financial data. Type **'Analyze my profile'** below, and I will generate a comprehensive, detailed breakdown of your financial health, tax strategy, and FIRE trajectory."
     })
 
@@ -88,7 +89,7 @@ if user_prompt := st.chat_input("Ask your Quant Advisor..."):
     with st.chat_message("user"):
         st.markdown(user_prompt)
 
-    # CHANGED: The "Brain" instructions are now strictly focused on being detailed, relatable, and example-driven.
+    
     system_context = f"""
     System Directive: You are an elite but highly empathetic Indian Wealth Mentor. 
     LIVE CLIENT DATA: Age {age}, Annual Income ₹{income}, Monthly Expenses ₹{expenses}.
